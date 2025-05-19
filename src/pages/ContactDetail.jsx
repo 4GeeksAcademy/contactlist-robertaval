@@ -1,7 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useContacts } from "../context/contactContext";
-
 
 function ContactDetail() {
     const { id } = useParams();
@@ -19,15 +18,23 @@ function ContactDetail() {
     }
 
     return (
-        <div>
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
             <h2>Detalle de {contact.name}</h2>
+            <img
+                src={contact.image || "https://via.placeholder.com/150"}
+                alt="avatar"
+                style={{ borderRadius: "50%", width: "150px", marginBottom: "1rem" }}
+            />
             <p>Email: {contact.email}</p>
-            <Link to="/" >Volver a la lista</Link>
+            <p>Teléfono: {contact.phone}</p>
+            <p>Dirección: {contact.address}</p>
+            <Link to="/">Volver a la lista</Link>
         </div>
     );
 }
 
 export default ContactDetail;
+
 
 
 
