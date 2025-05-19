@@ -28,3 +28,8 @@ function ContactDetail() {
 }
 
 export default ContactDetail;
+
+
+
+
+

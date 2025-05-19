@@ -13,14 +13,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </ContactProvider>            
     </React.StrictMode>
 );
-
-// <StoreProvider> 
-{/* Set up routing for the application */} 
- //<RouterProvider router={router}>
- //</RouterProvider>
- //</StoreProvider>
-
-
-//  // Import RouterProvider to use the router
-//  // Import the router configuration
-//import { StoreProvider } from './hooks/useGlobalReducer';  // Import the StoreProvider for global state management

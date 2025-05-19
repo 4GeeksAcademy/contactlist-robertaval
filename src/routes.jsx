@@ -1,4 +1,3 @@
-// Import necessary components and functions from react-router-dom.
 
 import {
     createBrowserRouter,
@@ -34,7 +33,6 @@ export const router = createBrowserRouter(
       </Route>
     )
 );
-
 
 
 
